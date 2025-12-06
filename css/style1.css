@@ -1,0 +1,652 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+background-color: #15134a;
+}
+
+header{
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(0, 142, 183, 0.2);
+}
+
+.container {
+  max-width: 1000px;
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+
+.container.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.logo span{
+    margin-left: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+
+.logo{
+    text-decoration: none;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 1px;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 8px 10px;
+    border-radius: 9999px;    
+}
+
+.menu a.active{
+    background-color: #008eb7;
+    color: #15134a;
+}
+
+.menu a.active:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.20);
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.menu a:hover:not(.active){
+    transform: translateY(-2px);
+    background-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.20);
+    transition: 
+        transform 0.2s ease,
+        background-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.portada{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px 20px;
+    border-bottom: 1px solid rgba(0, 142, 183, 0.2);
+}
+
+.portada-izq{
+    margin-top: 40px;
+}
+
+.portada-izq h1{
+    color: #15134a;
+    background-color: #008eb7;
+    border-radius: 9999px;
+    padding: 3px;
+    max-width: 180px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    text-align: center;
+    box-shadow: 0 6px 8px rgba(0,0,0,0.10);
+}
+
+.portada-izq p{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+}
+
+.acciones a{
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    padding: 6px;
+    margin: 3px;
+    border-radius: 9999px;
+    color: #15134a;
+    background-color: #00c89d;
+}
+
+.acciones a:hover{
+    transform: translateY(-2px);
+    color: #000000;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.20);
+    transition: 
+        transform 0.2s ease,
+        color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.portada-der img{
+    width: 600px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 6px 8px rgba(0,0,0,0.50);
+}
+
+.titulo-casos{
+    text-align: center;
+    color: #008eb7;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.casos{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.casos img{
+    width: 250px;
+    border-radius: 16px;
+    box-shadow: 0 6px 8px rgba(0,0,0,0.50);
+}
+
+.caso{
+    border-right: 1px solid rgba(0, 142, 183, 0.2);
+    border-left: 1px solid rgba(0, 142, 183, 0.2);
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.caso h3{
+    text-align: center;
+    font-weight: 600;
+    color: white;
+}
+
+.caso p{
+    color: white;
+    font-weight: 300;
+}
+
+
+footer {
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 1px solid rgba(0, 142, 183, 0.2);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover{
+    color: #008eb7;
+}
+
+footer nav ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.info h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin-bottom: 6px;
+}
+
+.info p{
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+}
+
+.finalpag{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    border-top: 1px solid rgba(0, 142, 183, 0.2);
+    color: #7876b6;
+}
+
+
+/* COMO AYUDAR PORTADA */
+
+.portada-ayudar{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    border-bottom: 1px solid rgba(0, 142, 183, 0.2);
+}
+
+.portada-ayudar h1{
+    color: #15134a;
+    background-color: #008eb7;
+    border-radius: 9999px;
+    padding: 3px;
+    max-width: 160px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    text-align: center;
+    box-shadow: 0 6px 8px rgba(0,0,0,0.10);
+}
+
+.portada-ayudar p{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.img-ayudar img{
+    width: 300px;
+    border-radius: 16px;
+}
+
+.texto-ayudar{
+    margin-top: 40px;
+}
+
+/* FORMAS DE AYUDAR */
+
+.titulo-opciones{
+    text-align: center;
+    color: #008eb7;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.grid-ayuda{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0,1fr));
+    gap: 20px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(0, 142, 183, 0.2);
+}
+
+.opcion{
+    text-align: center;
+    background: #101540;
+    border: 1px solid rgba(0,142,183,.25);
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 6px 16px rgba(0,0,0,.25);
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.opcion:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(0,0,0,.35);
+}
+
+.opcion .icono{
+  font-size: 32px;
+  color: #008eb7;
+  margin-bottom: 8px;
+}
+
+.opcion h3{
+  margin: 6px 0 8px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  color: white;
+}
+
+.opcion p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+.opcion .redes{
+  display:flex; justify-content:center; gap:12px;
+}
+.opcion .redes a{
+    font-size: 20px;
+    color: white;
+}
+.opcion .redes a:hover{
+    color:#008eb7;
+}
+
+/* DONACIONES */
+
+.titulo-donaciones h2{
+    text-align: center;
+    color: #008eb7;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.titulo-donaciones p{
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.grid-donar{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0,1fr));
+    gap: 20px;
+    padding-bottom: 40px;
+}
+
+.opcion-donar{
+    text-align: center;
+    background: #101540;
+    border: 1px solid rgba(0,142,183,.25);
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 6px 16px rgba(0,0,0,.25);
+}
+
+.opcion-donar h3{
+  margin: 6px 0 8px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  color: white;
+}
+
+.opcion-donar p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    color: white;
+}
+
+/* NOSOTROS */
+
+.portada-conocenos{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    border-bottom: 1px solid rgba(0, 142, 183, 0.2);
+}
+
+.portada-conocenos h1{
+    color: #15134a;
+    background-color: #008eb7;
+    border-radius: 9999px;
+    padding: 3px;
+    max-width: 120px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    text-align: center;
+    box-shadow: 0 6px 8px rgba(0,0,0,0.10);
+}
+
+.portada-conocenos p{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.img-conocenos img{
+    width: 300px;
+    border-radius: 16px;
+}
+
+.texto-conocenos{
+    margin-top: 40px;
+}
+
+/* HISTORIA */
+
+.historia h2{
+    text-align: center;
+    color: #008eb7;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.historia p{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+
+/* CONTACTO */
+
+.contacto-header {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.contacto-header h1 {
+  color: #008eb7;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.contacto-header p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  color: white;
+}
+
+/* FORMULARIO */
+
+.contacto-form {
+  max-width: 700px;
+  margin: 0 auto 60px;
+  background: #f6f8fa;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.form-grupo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.form-grupo label {
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #333;
+}
+
+.form-grupo input,
+.form-grupo select,
+.form-grupo textarea {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-grupo input:focus,
+.form-grupo select:focus,
+.form-grupo textarea:focus {
+  border-color: #008eb7;
+  box-shadow: 0 0 6px rgba(0,142,183,0.3);
+  outline: none;
+}
+
+/* BOTON */
+
+.contacto-form button {
+  display: block;
+  margin: 10px auto 0;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #008eb7;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contacto-form button:hover {
+  background-color: #00a4d4;
+  transform: translateY(-2px);
+}
+
+/* INFO CONTACTO */
+.contacto-info {
+  text-align: center;
+  padding-bottom: 60px;
+  color: white;
+}
+
+.contacto-info .info p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  margin-bottom: 8px;
+  color: white;
+}
+
+.contacto-info .redes {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contacto-info .redes a {
+  color: white;
+  font-size: 26px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.contacto-info .redes a:hover {
+  transform: scale(1.1);
+  color: #00a4d4;
+}
+
+
+/* ADOPTA */
+
+.portada-adopta{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    border-bottom: 1px solid rgba(0, 142, 183, 0.2);
+}
+
+.portada-adopta h1{
+    color: #15134a;
+    background-color: #008eb7;
+    border-radius: 9999px;
+    padding: 3px;
+    max-width: 180px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    text-align: center;
+    box-shadow: 0 6px 8px rgba(0,0,0,0.10);
+}
+
+.portada-adopta p{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.img-adopta img{
+    width: 300px;
+    border-radius: 16px;
+}
+
+.texto-adopta{
+    margin-top: 40px;
+}
+
+/* GRID ADOPTA */
+
+.adopta h2{
+    text-align: center;
+    color: #008eb7;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.grid-adopta{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0,1fr));
+    gap: 20px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(0, 142, 183, 0.2);
+}
+
+.grid-adopta img{
+    width: 200px;
+}
+
+.animal{
+    text-align: center;
+    background: #101540;
+    border: 1px solid rgba(0,142,183,.25);
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 6px 16px rgba(0,0,0,.25);
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.animal h3{
+  margin: 6px 0 8px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  color: white;
+}
+
+.animal p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+/* REQUISITOS */
+
+.requisitos h2{
+    text-align: center;
+    color: #008eb7;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.requisitos p{
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}

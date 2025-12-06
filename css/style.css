@@ -1,0 +1,288 @@
+
+
+/* NAVBAR */
+.navbar-nav .nav-link.active {
+  background-color: #00a3d9;
+  border-radius: 20px;
+  color: white !important;
+  padding: 6px 15px;
+  font-weight: 700;
+}
+
+.nav-color {
+  background-color: #0b0d45 !important;
+}
+
+.nav-color .navbar-brand,
+.nav-color .nav-link,
+.nav-color .navbar-toggler {
+  color: #ffffff !important;
+}
+
+.nav-color .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+.nav-color .nav-link:hover {
+  opacity: 0.8;
+  color: #ffffff !important;
+}
+
+/* INDEX */
+body {
+  background-color: #0b0d45;
+  color: #f5f5f5;
+}
+
+.destacado {
+  display: inline-block;
+  background-color: #00a3d9;
+  color: #001133;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.btn-pill {
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.sombra-portada {
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.titulo-casos {
+  color: #00a3e0;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.caso-card {
+  background-color: #111357;
+  border: none;
+  color: #f5f5f5;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.img-caso {
+  border-radius: 20px;
+  padding: 0.75rem;
+}
+
+/* ADOPTA */
+.texto-etiqueta {
+  background-color: #0bd694;
+  color: #001133;
+  font-weight: 700;
+  padding: 0.35rem 1rem;
+  font-size: 0.9rem;
+}
+
+.sombra-portada {
+  box-shadow: 0 10px 25px rgba(0,0,0,0.45);
+}
+
+.titulo-casos {
+  color: #00a3e0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.caso-card {
+  background-color: #111357;
+  border-radius: 15px;
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  padding-bottom: 1rem;
+}
+
+.img-caso {
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.btn-adopcion {
+  background-color: #00c78b;
+  color: #001133;
+  font-weight: 700;
+  border-radius: 20px;
+  padding: 6px 14px;
+  border: none;
+}
+
+.btn-adopcion:hover {
+  background-color: #00d69a;
+  color: #001133;
+}
+
+.lista-requisitos {
+  list-style: none;
+  padding-left: 0;
+  max-width: 600px;
+  font-size: 1rem;
+}
+
+.lista-requisitos li {
+  margin-bottom: 0.6rem;
+}
+
+
+/* COMO AYUDAR */
+.titulo-casos {
+  color: #00a3e0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.card-ayuda {
+  background-color: #111357;
+  border-radius: 18px;
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  color: #f5f5f5;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.card-ayuda .card-title {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.icono-ayuda i {
+  color: #00a3e0;
+}
+
+.btn-ayuda {
+  background-color: #00c78b;
+  color: #001133;
+  font-weight: 700;
+  border-radius: 999px;
+  border: none;
+  padding: 6px 16px;
+}
+
+.btn-ayuda:hover {
+  background-color: #00d69a;
+  color: #001133;
+}
+
+.card-donacion {
+  background-color: #111357;
+  border-radius: 18px;
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  color: #f5f5f5;
+}
+
+.sombra-portada {
+  box-shadow: 0 10px 25px rgba(0,0,0,0.45);
+}
+
+/* NOSOTROS */
+.titulo-casos {
+  color: #00a3e0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.texto-historia {
+  max-width: 900px;
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+.sombra-portada {
+  box-shadow: 0 10px 25px rgba(0,0,0,0.45);
+}
+
+/* FOOTER */
+.footer {
+  background-color: #0b0d45; /* azul oscuro */
+  color: #ffffff;
+}
+
+.footer-link {
+  color: #ffffff;
+  opacity: 0.8;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.9rem;
+}
+
+.footer-link:hover {
+  opacity: 1;
+  color: #ffffff;
+}
+
+.footer-icon {
+  color: #ffffff;
+  opacity: 0.85;
+}
+
+.footer-icon:hover {
+  opacity: 1;
+}
+
+.footer-line {
+  border-color: rgba(255, 255, 255, 0.2);
+  width: 95%;
+}
+
+.footer p {
+  margin-bottom: 0;
+}
+
+/* CONTACTO */
+.form-box {
+  background-color: #f8f8f8;
+  border-radius: 20px;
+  max-width: 650px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+.btn-enviar {
+  background-color: #00a3e0;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.btn-enviar:hover {
+  background-color: #0091c7;
+  color: #fff;
+}
+
+.footer-icon {
+  color: #ffffff;
+  opacity: 0.85;
+}
+
+.footer-icon:hover {
+  opacity: 1;
+}
+
+.subtitulo-contacto {
+  color: #00a3e0;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+
+
+@media (max-width: 990px) {
+  .navbar-nav .nav-link {
+    padding-left: 0;
+  }
+
+  .navbar-nav .nav-link.active {
+    display: inline-block; 
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .navbar-collapse{
+    margin-top: 1rem;
+  }
+}
