@@ -1,0 +1,12 @@
+@use 'mixins' as m;
+
+.container {
+  @include m.responder(tablet) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .destacado { display: inline-block; text-align: center; }
+}

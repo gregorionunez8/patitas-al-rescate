@@ -1,0 +1,43 @@
+@use 'variables' as v;
+
+.navbar-nav {
+  .nav-link {
+    &.active {
+      background-color: v.$color-primario;
+      border-radius: 20px;
+      color: #ffffff !important;
+      padding: 6px 15px;
+      font-weight: 700;
+    }
+  }
+}
+
+.nav-color {
+  background-color: v.$color-fondo !important;
+
+  .navbar-brand,
+  .nav-link,
+  .navbar-toggler {
+    color: #ffffff !important;
+  }
+
+  .navbar-toggler-icon {
+    filter: invert(1);
+  }
+
+  .nav-link:hover {
+    opacity: 0.8;
+    color: #ffffff !important;
+  }
+}
+
+.footer {
+  background-color: v.$color-fondo;
+}
+
+.footer-link {
+  color: #ffffff;
+  opacity: 0.85;
+  transition: opacity v.$transicion-rapida;
+  &:hover { opacity: 1; color: #ffffff; }
+}

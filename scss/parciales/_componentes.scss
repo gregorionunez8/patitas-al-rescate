@@ -1,0 +1,58 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+%tarjeta-base {
+  background-color: v.$color-tarjeta;
+  color: v.$color-texto;
+  box-shadow: v.$sombra-fuerte;
+}
+
+.caso-card {
+  @extend %tarjeta-base;
+  border: none;
+  transition: transform v.$transicion-rapida, box-shadow v.$transicion-rapida;
+  &:hover { transform: translateY(-2px); }
+}
+
+.img-caso {
+  border-radius: v.$radio-suave;
+  padding: 10px;
+}
+
+.texto-etiqueta {
+  background-color: v.$color-acento;
+  color: v.$color-oscuro;
+  font-weight: 700;
+  padding: 0.35rem 1rem;
+  font-size: 0.9rem;
+}
+
+.btn-adopcion { @include m.boton-pill(v.$color-secundario); }
+.btn-ayuda { @include m.boton-pill(v.$color-secundario); border-radius: v.$radio-redondo; padding: 6px 16px; }
+
+.lista-requisitos {
+  list-style: none;
+  padding-left: 0;
+  max-width: 600px;
+  font-size: 1rem;
+
+  li { margin-bottom: 0.6rem; }
+}
+
+.card-ayuda {
+  @extend %tarjeta-base;
+  border-radius: 18px;
+  border: 1px solid rgba(0, 255, 255, 0.2);
+
+  .card-title { font-weight: 700; margin-bottom: 0.5rem; }
+}
+
+.icono-ayuda {
+  i { color: #00a3e0; }
+}
+
+.card-donacion {
+  @extend %tarjeta-base;
+  border-radius: 18px;
+  border: 1px solid rgba(0, 255, 255, 0.2);
+}

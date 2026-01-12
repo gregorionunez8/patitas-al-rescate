@@ -1,0 +1,26 @@
+@use 'variables' as v;
+
+@mixin responder($punto) {
+  $ancho: map-get(v.$puntos, $punto);
+  @if $ancho {
+    @media (min-width: $ancho) {
+      @content;
+    }
+  }
+}
+
+@mixin boton-pill($fondo) {
+  background-color: $fondo;
+  color: v.$color-oscuro;
+  font-weight: 700;
+  border-radius: 20px;
+  border: none;
+  padding: 6px 14px;
+  transition: transform v.$transicion-rapida, opacity v.$transicion-rapida;
+
+  &:hover {
+    opacity: 0.95;
+    transform: translateY(-1px);
+    color: v.$color-oscuro;
+  }
+}

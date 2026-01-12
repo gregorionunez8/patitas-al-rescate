@@ -1,0 +1,39 @@
+body{background-color:#0b0d45;color:#f5f5f5}
+img{max-width:100%;height:auto}
+@keyframes aparecer{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+.sombra-portada{box-shadow:0 10px 25px rgba(0,0,0,.4);animation:aparecer 320ms ease}
+.destacado{display:inline-block;background-color:#00a3d9;color:#001133;padding:.25rem .75rem;border-radius:999px;font-weight:700}
+.btn-pill{border-radius:999px;font-weight:600;transition:transform 180ms ease,opacity 180ms ease}
+.btn-pill:hover{transform:translateY(-1px);opacity:.95}
+.titulo-casos{color:#00a3e0;letter-spacing:2px;text-transform:uppercase;font-weight:700}
+.texto-primario{color:#00a3d9}
+.fondo-primario{background-color:#00a3d9}
+.texto-secundario{color:#00c78b}
+.fondo-secundario{background-color:#00c78b}
+.texto-acento{color:#0bd694}
+.fondo-acento{background-color:#0bd694}
+.navbar-nav .nav-link.active{background-color:#00a3d9;border-radius:20px;color:#fff!important;padding:6px 15px;font-weight:700}
+.nav-color{background-color:#0b0d45!important}
+.nav-color .navbar-brand,.nav-color .nav-link,.nav-color .navbar-toggler{color:#fff!important}
+.nav-color .navbar-toggler-icon{filter:invert(1)}
+.nav-color .nav-link:hover{opacity:.8;color:#fff!important}
+.footer{background-color:#0b0d45}
+.footer-link{color:#fff;opacity:.85;transition:opacity 180ms ease}
+.footer-link:hover{opacity:1;color:#fff}
+.caso-card,.card-ayuda,.card-donacion{background-color:#111357;color:#f5f5f5;box-shadow:0 10px 25px rgba(0,0,0,.4)}
+.caso-card{border:none;transition:transform 180ms ease,box-shadow 180ms ease}
+.caso-card:hover{transform:translateY(-2px)}
+.img-caso{border-radius:15px;padding:10px}
+.texto-etiqueta{background-color:#0bd694;color:#001133;font-weight:700;padding:.35rem 1rem;font-size:.9rem}
+.btn-adopcion{background-color:#00c78b;color:#001133;font-weight:700;border-radius:20px;border:none;padding:6px 14px;transition:transform 180ms ease,opacity 180ms ease}
+.btn-adopcion:hover{opacity:.95;transform:translateY(-1px);color:#001133}
+.btn-ayuda{background-color:#00c78b;color:#001133;font-weight:700;border-radius:999px;border:none;padding:6px 16px;transition:transform 180ms ease,opacity 180ms ease}
+.btn-ayuda:hover{opacity:.95;transform:translateY(-1px);color:#ffffff}
+.lista-requisitos{list-style:none;padding-left:0;max-width:600px;font-size:1rem}
+.lista-requisitos li{margin-bottom:.6rem}
+.card-ayuda{border-radius:18px;border:1px solid rgba(0,255,255,.2)}
+.card-ayuda .card-title{font-weight:700;margin-bottom:.5rem}
+.icono-ayuda i{color:#00a3e0}
+.card-donacion{border-radius:18px;border:1px solid rgba(0,255,255,.2)}
+@media (min-width:768px){.container{padding-left:1rem;padding-right:1rem}}
+@media (max-width:575.98px){.destacado{display:inline-block;text-align:center}}

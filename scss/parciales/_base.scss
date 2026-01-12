@@ -1,0 +1,51 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+body {
+  background-color: v.$color-fondo;
+  color: v.$color-texto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes aparecer {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.sombra-portada {
+  box-shadow: v.$sombra-fuerte;
+  animation: aparecer 320ms ease;
+}
+
+.destacado {
+  display: inline-block;
+  background-color: v.$color-primario;
+  color: v.$color-oscuro;
+  padding: 0.25rem 0.75rem;
+  border-radius: v.$radio-redondo;
+  font-weight: 700;
+}
+
+.btn-pill {
+  border-radius: v.$radio-redondo;
+  font-weight: 600;
+  transition: transform v.$transicion-rapida, opacity v.$transicion-rapida;
+  &:hover { transform: translateY(-1px); opacity: 0.95; }
+}
+
+.titulo-casos {
+  color: #00a3e0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+@each $nombre, $color in (primario: v.$color-primario, secundario: v.$color-secundario, acento: v.$color-acento) {
+  .texto-#{$nombre} { color: $color; }
+  .fondo-#{$nombre} { background-color: $color; }
+}
+
