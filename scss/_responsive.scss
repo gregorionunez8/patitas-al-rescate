@@ -1,0 +1,8 @@
+@media (max-width: 576px){
+  .navbar-brand{font-size:1rem}
+  .destacado{font-size:2rem}
+}
+
+@media (prefers-reduced-motion: reduce){
+  *{animation:none !important; transition:none !important; scroll-behavior:auto !important}
+}

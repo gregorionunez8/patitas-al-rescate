@@ -1,0 +1,16 @@
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:$fuente;
+  color:$color-texto;
+  background:
+    radial-gradient(1200px 800px at 10% 10%, rgba($primario,.22), transparent 55%),
+    radial-gradient(900px 700px at 85% 15%, rgba($acento,.18), transparent 60%),
+    radial-gradient(1000px 700px at 40% 90%, rgba($secundario,.16), transparent 60%),
+    linear-gradient(180deg, $color-fondo 0%, $color-fondo-2 100%);
+  overflow-x:hidden;
+}
+img{max-width:100%;height:auto}
+p{color:$color-texto-2}
+a{color:inherit}
+a:hover{color:$color-texto}

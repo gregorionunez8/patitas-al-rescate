@@ -3,7 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Patitas al rescate - Ayudar</title>
+    
+    
+    <meta name="theme-color" content="#0b0d45" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<meta name="description" content="Formas de ayudar: donaciones, voluntariado y difusión. Sumate para que más animales tengan una segunda oportunidad." />
+    <meta name="keywords" content="rescate animal, adopción, perros, gatos, tránsito, voluntariado, donaciones, Rosario" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="Cómo ayudar | Patitas al rescate" />
+    <meta property="og:description" content="Formas de ayudar: donaciones, voluntariado y difusión. Sumate para que más animales tengan una segunda oportunidad." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="../img/portada.png" />
+<title>Cómo ayudar | Patitas al rescate</title>
     <link rel="icon" type="image/x-icon" href="../img/favicon.ico" />
     <link
       rel="stylesheet"
@@ -15,15 +28,16 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
     <link rel="stylesheet" href="../css/main.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg nav-color">
+    <nav class="navbar navbar-expand-lg navbar-dark nav-color navbar-glass sticky-top">
       <div class="container">
         <a class="navbar-brand" href="../index.html">
           <img
             src="../img/logo.png"
-            alt="Logo"
+            alt="Logo de Patitas al rescate"
             width="30"
             height="30"
             class="d-inline-block align-text-top"
@@ -37,7 +51,7 @@
           data-bs-target="#navbarNav"
           aria-controls="navbarNav"
           aria-expanded="false"
-          aria-label="Toggle navigation"
+          aria-label="Abrir menú de navegación"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -63,10 +77,11 @@
       </div>
     </nav>
 
-    <section class="container py-5">
-      <div class="row align-items-center gy-4">
+    
+    <main id="contenido" class="contenido"><section class="container py-5">
+      <div class="row align-items-center gy-4" data-aos="fade-up">
         <div class="col-12 col-lg-7">
-          <h2 class="mb-3 destacado">Tu ayuda cambia vidas</h2>
+          <h1 class="mb-3 destacado" data-aos="fade-right">Tu ayuda cambia vidas</h1>
 
           <p>
             Con tu aporte hacemos rescates, castraciones, vacunas y muchísimo
@@ -79,14 +94,14 @@
           <img
             src="../img/caso1.jpg"
             alt="Perro feliz"
-            class="img-fluid rounded-4 sombra-portada"
+            class="img-fluid rounded-4 sombra-portada anim-flotar"
           />
         </div>
       </div>
     </section>
 
     <section class="container py-5">
-      <h2 class="text-center titulo-casos mb-4">FORMAS DE AYUDAR</h2>
+      <h2 class="text-center titulo-casos mb-4" data-aos="fade-up">FORMAS DE AYUDAR</h2>
 
       <div class="row g-4">
         <div class="col-12 col-md-6 col-lg-3">
@@ -163,14 +178,14 @@
     </section>
 
     <section class="container py-5" id="donaciones">
-      <h2 class="text-center titulo-casos mb-2">DONACIONES</h2>
+      <h2 class="text-center titulo-casos mb-2" data-aos="fade-up">DONACIONES</h2>
       <p class="text-center mb-4">
         Elegí el medio que te quede más cómodo. ¡Todo suma!
       </p>
 
       <div class="row g-4 justify-content-center">
         <div class="col-12 col-md-6 col-lg-4 text-center">
-          <div class="card card-donacion h-100">
+          <div class="card card-donacion h-100" data-aos="fade-up" data-aos-delay="0">
             <div class="card-body">
               <h5 class="card-title">Mercado Pago</h5>
               <p class="card-text mb-1">
@@ -187,7 +202,7 @@
         </div>
 
         <div class="col-12 col-md-6 col-lg-4 text-center">
-          <div class="card card-donacion h-100">
+          <div class="card card-donacion h-100" data-aos="fade-up" data-aos-delay="120">
             <div class="card-body">
               <h5 class="card-title">Transferencia</h5>
               <p class="card-text mb-1">
@@ -204,7 +219,7 @@
         </div>
 
         <div class="col-12 col-md-6 col-lg-4 text-center">
-          <div class="card card-donacion h-100">
+          <div class="card card-donacion h-100" data-aos="fade-up" data-aos-delay="240">
             <div class="card-body">
               <h5 class="card-title">Materiales</h5>
               <p class="card-text mb-1">
@@ -221,6 +236,9 @@
         </div>
       </div>
     </section>
+    </main>
+
+
 
     <footer class="footer pt-5 pb-3">
       <div class="container text-center text-white">
@@ -279,5 +297,10 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+  
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({ once: true, duration: 700, offset: 80 });
+    </script>
   </body>
 </html>

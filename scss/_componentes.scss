@@ -1,0 +1,156 @@
+.navbar-brand{
+  font-weight:800;
+  letter-spacing:.2px;
+  color:$color-texto !important;
+
+  img{filter:drop-shadow(0 6px 14px rgba(0,0,0,.35))}
+}
+
+.nav-link{
+  position:relative;
+  font-weight:600;
+  color:rgba(244,247,255,.86) !important;
+  transition:transform .18s ease, opacity .18s ease;
+
+  &:hover{opacity:1;transform:translateY(-1px)}
+
+  &::after{
+    content:"";
+    position:absolute;
+    left:.5rem;
+    right:.5rem;
+    bottom:.35rem;
+    height:2px;
+    border-radius:999px;
+    background:linear-gradient(90deg, $primario, $acento);
+    transform:scaleX(0);
+    transform-origin:left;
+    transition:transform .22s ease;
+    opacity:.85;
+  }
+
+  &:hover::after{transform:scaleX(1)}
+}
+
+.destacado{
+  display:inline-block;
+  font-size:clamp(2rem, 3.6vw, 3.1rem);
+  line-height:1.05;
+  padding:.2rem 0;
+  font-weight:900;
+  letter-spacing:-.02em;
+  background:linear-gradient(90deg, #ffffff 0%, rgba(255,255,255,.92) 25%, rgba($primario,.95) 55%, rgba($acento,.92) 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+}
+
+
+.btn-adopcion,
+.btn-ayuda,
+.btn-enviar{
+  @extend .btn-pill;
+  background:linear-gradient(90deg, rgba(0,163,217,1) 0%, rgba(255,77,157,1) 100%) !important;
+  border:none !important;
+  color:$color-texto !important;
+  text-decoration:none;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:.4rem;
+}
+
+.btn-pill{
+  border-radius:999px !important;
+  font-weight:700 !important;
+  padding:.55rem 1rem;
+  border:1px solid rgba(255,255,255,.12);
+  box-shadow:0 10px 22px rgba(0,0,0,.22);
+  transition:transform .18s ease, filter .18s ease, box-shadow .18s ease;
+
+  &:hover{
+    transform:translateY(-2px);
+    filter:saturate(1.05);
+    box-shadow:0 18px 40px rgba(0,0,0,.35);
+  }
+}
+
+.btn-success{
+  background:linear-gradient(90deg, $secundario 0%, $primario 100%) !important;
+  border:none !important;
+}
+
+.sombra-portada{
+  border-radius:$radio;
+  border:1px solid rgba(255,255,255,.14);
+  box-shadow:$sombra;
+  transform:translateZ(0);
+}
+
+.anim-flotar{animation:flotar 4.6s ease-in-out infinite}
+
+@keyframes flotar{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-8px)}
+}
+
+.titulo-casos{
+  text-transform:uppercase;
+  letter-spacing:.22em;
+  font-weight:800;
+  font-size:.95rem;
+  color:rgba(244,247,255,.9);
+
+  &::before{
+    content:"";
+    display:inline-block;
+    width:14px;
+    height:14px;
+    border-radius:4px;
+    margin-right:.5rem;
+    background:linear-gradient(135deg, $primario, $acento);
+    box-shadow:0 10px 22px rgba(0,0,0,.25);
+    transform:translateY(2px);
+  }
+}
+
+.texto-historia{font-size:1.05rem}
+.subtitulo-contacto{color:rgba(244,247,255,.9);font-weight:700}
+
+.card, .list-group-item, .accordion-item, .form-control, .form-select{
+  background:$color-superficie !important;
+  border:1px solid rgba(255,255,255,.12) !important;
+  color:$color-texto !important;
+  border-radius:18px;
+}
+
+.card{
+  box-shadow:0 14px 40px rgba(0,0,0,.25);
+  overflow:hidden;
+
+  &:hover{transform:translateY(-3px);transition:transform .18s ease}
+
+  .card-title{font-weight:800}
+  .card-text{color:rgba(244,247,255,.78)}
+}
+
+.form-control::placeholder{color:rgba(244,247,255,.5)}
+.form-control:focus{
+  border-color:rgba($primario,.55) !important;
+  box-shadow:0 0 0 .25rem rgba($primario,.18) !important;
+}
+
+
+
+.navbar-glass.navbar-dark{
+  .navbar-toggler{
+    border-color:rgba(255,255,255,.35);
+  }
+  .navbar-toggler:focus{
+    box-shadow:0 0 0 .2rem rgba(255,255,255,.15);
+  }
+  .navbar-toggler-icon{
+    filter:drop-shadow(0 2px 10px rgba(0,0,0,.35));
+  }
+}
+

@@ -1,6 +1,5 @@
-@use 'parciales/variables';
-@use 'parciales/mixins';
-@use 'parciales/base';
-@use 'parciales/layout';
-@use 'parciales/componentes';
-@use 'parciales/responsive';
+@import "variables";
+@import "base";
+@import "layout";
+@import "componentes";
+@import "responsive";

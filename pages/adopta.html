@@ -3,7 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Patitas al rescate - Adopta</title>
+    
+    
+    <meta name="theme-color" content="#0b0d45" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<meta name="description" content="Mirá los perros y gatos disponibles para adopción. Información, requisitos y cómo coordinar una visita." />
+    <meta name="keywords" content="rescate animal, adopción, perros, gatos, tránsito, voluntariado, donaciones, Rosario" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="Adoptá | Patitas al rescate" />
+    <meta property="og:description" content="Mirá los perros y gatos disponibles para adopción. Información, requisitos y cómo coordinar una visita." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="../img/portada.png" />
+<title>Adoptá | Patitas al rescate</title>
     <link rel="icon" type="image/x-icon" href="../img/favicon.ico" />
     <link
       rel="stylesheet"
@@ -15,15 +28,16 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
     <link rel="stylesheet" href="../css/main.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg nav-color">
+    <nav class="navbar navbar-expand-lg navbar-dark nav-color navbar-glass sticky-top">
       <div class="container">
         <a class="navbar-brand" href="../index.html">
           <img
             src="../img/logo.png"
-            alt="Logo"
+            alt="Logo de Patitas al rescate"
             width="30"
             height="30"
             class="d-inline-block align-text-top"
@@ -37,14 +51,14 @@
           data-bs-target="#navbarNav"
           aria-controls="navbarNav"
           aria-expanded="false"
-          aria-label="Toggle navigation"
+          aria-label="Abrir menú de navegación"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link aria-current=" href="../index.html">Inicio</a>
+              <a class="nav-link" href="../index.html">Inicio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="adopta.html">Adoptá</a>
@@ -63,10 +77,11 @@
       </div>
     </nav>
 
-    <section class="container py-5">
-      <div class="row align-items-center gy-4">
+    
+    <main id="contenido" class="contenido"><section class="container py-5">
+      <div class="row align-items-center gy-4" data-aos="fade-up">
         <div class="col-12 col-lg-7">
-          <h2 class="mb-3 destacado">Adoptá y cambiá una vida</h2>
+          <h1 class="mb-3 destacado" data-aos="fade-right">Adoptá y cambiá una vida</h1>
 
           <p class="mb-4">
             En Patitas al Rescate creemos que adoptar es un acto de amor. Cada
@@ -78,14 +93,14 @@
         <div class="col-12 col-lg-5 text-center">
           <img
             src="../img/portada1.jpg"
-            class="img-fluid rounded-4 sombra-portada"
+            class="img-fluid rounded-4 sombra-portada anim-flotar"
             alt="Perro en adopción"
           />
         </div>
       </div>
     </section>
     <section class="container py-5">
-      <h2 class="text-center titulo-casos mb-5">NUESTROS AMIGOS EN ADOPCIÓN</h2>
+      <h2 class="text-center titulo-casos mb-5" data-aos="fade-up">NUESTROS AMIGOS EN ADOPCIÓN</h2>
 
       <div class="row g-4">
         <div class="col-12 col-md-6 col-lg-4">
@@ -141,7 +156,7 @@
       </div>
     </section>
     <section class="container py-5">
-      <h2 class="text-center titulo-casos mb-4">REQUISITOS PARA ADOPTAR</h2>
+      <h2 class="text-center titulo-casos mb-4" data-aos="fade-up">REQUISITOS PARA ADOPTAR</h2>
 
       <ul class="lista-requisitos text-center mx-auto">
         <li>👤 Ser mayor de 18 años.</li>
@@ -151,6 +166,9 @@
         <li>❤️ Brindar amor, tiempo y paciencia.</li>
       </ul>
     </section>
+    </main>
+
+
 
     <footer class="footer pt-5 pb-3">
       <div class="container text-center text-white">
@@ -209,5 +227,10 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+  
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({ once: true, duration: 700, offset: 80 });
+    </script>
   </body>
 </html>
